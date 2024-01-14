@@ -58,16 +58,18 @@ def home_page():
 
 def main():
     st.sidebar.image("assets/logo.png")
-    st.sidebar.write("<h1 class='sidebar_h1'>Omdena Toronto Chapter</h1>", unsafe_allow_html=True)
-    
-    selected_task = st.sidebar.selectbox("Navigate to a task", ["Home", "Model", "Visualization", "Contributors"], label_visibility="hidden")
+    st.sidebar.write(SIDEBAR_TEXT_1, unsafe_allow_html=True)
+    selected_task = st.sidebar.selectbox("Please navigate through the different sections of our website from here", ["Home", "About", "Visualization", "Model", "Contributors"], label_visibility="hidden")
+    st.sidebar.write(SIDEBAR_TEXT_2, unsafe_allow_html=True)
     
     if selected_task == "Home":
         home_page()
+    elif selected_task == "About":
+        st.write(ABOUT_US, unsafe_allow_html=True)
+    elif selected_task == "Visualization":
+        st.write(VISUALIZATION, unsafe_allow_html=True)
     elif selected_task == "Model":
         model_page()
-    elif selected_task == "Visualization":
-        pass
     elif selected_task == "Contributors":
         contributors_page()
     
