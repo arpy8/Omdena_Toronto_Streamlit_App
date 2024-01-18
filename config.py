@@ -3,7 +3,8 @@ CSS = open("assets/styles.css", 'r').read()
 IMG_BANNER = "assets/banner.png"
 IMG_LOGO = "assets/logo.png"
 
-
+API_URL = "https://srastog-alzheimer-detection.hf.space/predict"
+LABELS = ['mildly demented', 'moderately demented', 'non demented', 'very mild demented']
 
 SIDEBAR_TEXT_1 = """
 <h1>Omdena Toronto Chapter</h1>
