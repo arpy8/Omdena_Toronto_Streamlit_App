@@ -1,64 +1,66 @@
 CSS = open("assets/styles.css", 'r').read()
 
 IMG_BANNER = "assets/banner.png"
+IMG_OMDENA = "assets/omdena-logo.png"
 IMG_LOGO = "assets/logo.png"
 
-API_URL = "https://srastog-alzheimer-detection.hf.space/predict"
-LABELS = ['mildly demented', 'moderately demented', 'non demented', 'very mild demented']
-
 SIDEBAR_TEXT_1 = """
-<h1>Omdena Toronto Chapter</h1>
+<center><h1>Omdena<br> Algeria & Bhopal<br>Chapter</h1></center>
 """
 SIDEBAR_TEXT_2 = """
 <hr>
 <h3 class='sidebar_h1'>Disclaimer</h3>
-<h5 class='sidebar_h1'>The predictions provided by this system are for informational purposes only. Consult a healthcare professional for accurate diagnosis and advice.</h5>
+<h5 class='sidebar_h1'>The predictions provided by this system are for informational purposes only.</h5>
 """
+
 
 PROJECT_BACKGROUND = """
-<h2>Project background</h2><br><p>Brain-related disorders, such as Alzheimer's disease, Parkinson's disease, and Multiple Sclerosis, are a growing global concern. As per the World Health Organization, neurological disorders are responsible for 9% of all deaths globally, and Alzheimer's and other dementias alone are among the top ten leading causes of death worldwide. With a rapidly aging population, these numbers are expected to rise significantly over the coming years. Despite significant advances in medical technology, early detection and accurate diagnosis of these conditions remain challenging. Traditionally, the diagnosis of these disorders has been based on clinical assessments and symptoms. However, these methods are often subjective and may not detect the disease until it has significantly progressed.</p>
-Local Chapter Website : <a href="https://www.linkedin.com/company/omdena-toronto-chapter">Visit Site</a><br>
-Dagshub Repository     : <a href="https://dagshub.com/Omdena/TorontoCanadaChapter_BrainScanImages">Visit Site</a><br>
+## Project background
+The arid climate of several Algerian regions and the water-stressed region of Bhopal, effective water management and forecasting are crucial. This project aims to harness the power of machine learning to address the unique water resource challenges faced by both regions. By creating an open-source solution, we aim to empower Algeria and Bhopal to make informed decisions, optimize resource allocation, and build resilient water infrastructure for a sustainable future. <br><br>
+Local Chapter Website : [Visit Site](https://www.omdena.com/chapter-challenges/open-source-water-management-and-forecasting-project-in-algeria-and-bhopal) <br>
+Dagshub Repository : [Visit Site](https://dagshub.com/Omdena/AlgeriaBhopal_WaterManagementandForecasting) <br>
 """
 
-PROJECT_GOALS = f"""<h2>Project goals</h2><p>
-<ul><li>Accurate Identification</li>
-<li>High-Performance Metrics</li>
-<li>Efficient Processing</li>
-<li>Effective Training and Validation Process</li>
-<li>Optimized Model</li>
-<li>User-Friendly Deployment</li></ul></p>"""
-
 PROJECT_PROBLEM = f"""
-<h2>The Problem</h2> <p>The goal of this project is to leverage the power of artificial intelligence, specifically machine learning and computer vision techniques, to analyze brain scan images for the early detection and diagnosis of Alzheimer's disease, Parkinson's disease, and Multiple Sclerosis. Our aim is to create an AI model that can analyze these images, identify patterns that may be indicative of these disorders, and make predictions with high accuracy. The expectation is that such a tool could supplement existing diagnostic practices, providing a more objective and potentially earlier indication of these diseases. We believe that an accurate and efficient AI diagnostic tool can significantly improve the prognosis and quality of life for millions of patients globally.<br>
+## The Problem
+The different water resource challenges faced by both Algeria and Bhopal region in India.
+"""
+
+PROJECT_GOALS = """
+## Project Goals
+##### **1. Develop a Comprehensive Open-Source Water Management and Forecasting System:**
+Create a user-friendly platform tailored to the specific needs of Algeria and Bhopal, integrating machine learning algorithms for precise water forecasting and efficient water resource management. 
+##### **2. Enhance Water Resource Utilization:**
+Improve the sustainable use of water resources in both regions by providing accurate forecasts and real-time monitoring.
+##### **3. Capacity Building:**
+Empower local stakeholders in Algeria and Bhopal with the knowledge and tools necessary to make well-informed decisions about water management.
+##### **4. Community Engagement:**
+Foster collaboration among local government agencies, NGOs, and the research community to collectively address water-related challenges in both regions.
 """
 
 PROJECT_TIMELINE = """
-<h2>Project Timeline</h2>
-<ol><li>Data Acquisition</li>
-<li>Data Preprocessing & Exploration</li>
-<li>Model Selection & Baseline Development</li>
-<li>Optimizing the Model</li>
-<li>Validation & Model Deployment</li>
-<li>Documentation & Presentation</li></ol>
+## Project Timeline
+##### 1. Project Initiation: 
+Define project goals and scope. Identify key stakeholders and project team members and teams. Secure resources.
+##### 2. Research and Data Collection: 
+Gather historical weather and water data specific to Algeria and Bhopal. Collect satellite imagery and remote sensing data. Use open source data.
+##### 3. Visualization and Exploration:
+Visualize and explore the data and identify relevant machine learning algorithms accordingly.
+##### 4. Development of Water Management Platform: 
+Design and develop the open-source platform for water management and forecasting. Implement machine learning models for water forecasting, water resources disponibility, quality and risks.
+##### 5. Testing and Validation: 
+Conduct extensive testing of the platform using historical data. Validate the accuracy of machine learning models. Address any issues or bugs that arise during testing.
+##### 6. Deployment and Maintenance: 
+Deploy the water management platform for operational use. Monitor and maintain the platform. Provide ongoing support and updates.
+##### 7. Data Dissemination:
+Refine the github repository of the project and prepare the final demo for presentation on the official platforms of Omdena and the parties involved. Write conference and/or journal papers to publish the presented solutions.
 """
+
 
 ABOUT_US = """
-## Introduction to Alzheimer's Disease
-Alzheimer's disease (AD) is a progressive neurodegenerative disease. Though best known for its role in declining memory function, symptoms also include: difficulty thinking and reasoning, making judgements and decisions, and planning and performing familiar tasks. It may also cause alterations in personality and behavior. The cause of AD is not well understood. There is thought to be a significant hereditary component. For example, a variation of the APOE gene, APOE e4, increases risk of Alzheimer's disease.
-
-## Why Early Detection Matters
-Early detection of Alzheimer's disease is paramount because it offers the best chance for effective treatment and improved quality of life. Identifying the condition at its onset allows for timely interventions, which can slow its progression and enable individuals and their families to plan for the future. Early detection also facilitates access to support services and clinical trials, fostering hope for more effective therapies in the fight against this devastating disease.
-
-## Purpose of the project
-The purpose of this project proposal is to develop a machine learning model for the early prediction of Alzheimer's disease. Alzheimer's disease is a devastating neurodegenerative disorder that affects millions of individuals worldwide. Early detection is crucial for better patient care and the development of potential interventions. This project aims to leverage machine learning techniques to create a predictive model that can identify individuals at risk of Alzheimer's disease based on relevant data.
-
-<br>
+<h4 style="text-align: center; color:#FFF6F4 !important;">{More info about the problem statement}</h4><hr>
 """
 
-VISUALIZATION = """
-<h1 style="text-align: center; color:#FFF6F4 !important;">Visualizations developed during EDA goes here.</h1><hr>
-"""
 
 CONTRIBUTORS = """  
 <h1 style="text-align: center; color:#FFF6F4;">A heartfelt thankyou to all our contributors ❤️</h1><hr>
@@ -69,8 +71,12 @@ CONTRIBUTORS = """
     <th width="20%" style="font-size: 140%;">Chapter Lead</th>    
 </tr>
 <tr>
-    <td>Omdena Toronto Chapter</td>    
-    <td>Kausthab Dutta Phukan</td>    
+    <td>Omdena Algeria Chapter</td>    
+    <td>Chapter Lead</td>    
+</tr>
+<tr>
+    <td>Omdena Bhopal Chapter</td>    
+    <td>Chapter Lead</td>    
 </tr>
 </table>
 <br>
@@ -78,26 +84,6 @@ CONTRIBUTORS = """
     <tbody>
         <tr>
             <th width="20%" style="font-size: 140%;" colspan="3">Contributors</th>
-        </tr>
-        <tr>
-            <td>John Doe</td>
-            <td>John Doe</td>
-            <td>John Doe</td>
-        </tr>
-        <tr>
-            <td>John Doe</td>
-            <td>John Doe</td>
-            <td>John Doe</td>
-        </tr>
-        <tr>
-            <td>John Doe</td>
-            <td>John Doe</td>
-            <td>John Doe</td>
-        </tr>
-        <tr>
-            <td>John Doe</td>
-            <td>John Doe</td>
-            <td>John Doe</td>
         </tr>
         <tr>
             <td>John Doe</td>

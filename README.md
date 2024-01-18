@@ -1,6 +1,6 @@
 ---
-title: Omdena Toronto Streamlit App
-emoji: 🏆
+title: Omdena Algeria & Bhopal Streamlit App
+emoji: 💦
 colorFrom: blue
 colorTo: indigo
 sdk: streamlit
@@ -9,7 +9,7 @@ app_file: main.py
 pinned: false
 ---
 
-# Omdena Toronto Streamlit App
+# Omdena Algeria & Bhopal Streamlit App
 
 ## Requirements
 
